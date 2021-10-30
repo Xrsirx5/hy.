@@ -63,8 +63,11 @@ async def filter(client, message):
                     [InlineKeyboardButton(text=f"{filename}",callback_data=f"pr0fess0r_99#{file_id}")]
                     )
         else:
-            await client.send_sticker(chat_id=message.from_user.id, sticker='CAADBQADMwIAAtbcmFelnLaGAZhgBwI')
-            return
+            LuciferMoringstar=await client.send_message(
+            chat_id = message.chat.id,
+            text=f"""
+Couldn't Find Movie.
+Please Check the spelling in google.😊 """,
 
         if not btn:
             return
